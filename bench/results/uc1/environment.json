@@ -1,0 +1,9 @@
+{
+  "captured_at": "2026-11-10T06:14:59+09:00",
+  "os": "Windows-11-10.0.28000-SP0",
+  "machine": "ARM64",
+  "python": "3.12.10",
+  "gpu": "NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU), 621.14, 64000 MiB",
+  "lms_ps": "IDENTIFIER                              MODEL                                   STATUS    SIZE        CONTEXT    PARALLEL    LOAD CONFIG    DEVICE    TTL\ngoogle/gemma-4-e4b                      google/gemma-4-e4b                      IDLE      6.33 GB     65536      4           LM Studio      Local        \nqwen/qwen3.5-9b                         qwen/qwen3.5-9b                         IDLE      6.55 GB     65536      4           LM Studio      Local        \ntext-embedding-nomic-embed-text-v1.5    text-embedding-nomic-embed-text-v1.5    IDLE      84.11 MB    2048       -           LM Studio      Local",
+  "server_py_sha256": "8e3e4913e7807c8553cc4b38055567b69476934f61a5fd199fd76ad823f0b104"
+}

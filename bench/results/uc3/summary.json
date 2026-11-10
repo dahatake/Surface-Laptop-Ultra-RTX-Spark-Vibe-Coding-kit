@@ -1,0 +1,555 @@
+{
+  "n_per_item": 5,
+  "expectation": "Dark dashboard titled 'RTX Spark Dashboard' with 3 metric cards in one row (GPU usage, unified memory, tokens/sec) and a blue benchmark button.",
+  "visual_review": {
+    "holistic": {
+      "confusion": {
+        "tp": 25,
+        "tn": 0,
+        "fp_false_alarm": 10,
+        "fn_missed_defect": 0,
+        "unparseable": 0,
+        "accuracy": 0.714,
+        "recall_defects": 1.0,
+        "false_alarm_rate": 1.0
+      },
+      "latency_sec": {
+        "n": 35,
+        "min": 3.757,
+        "median": 4.799,
+        "mean": 4.797,
+        "p95": 6.239,
+        "max": 6.809,
+        "stdev": 0.71
+      },
+      "correct_reason_rate_on_detected_defects": 0.84,
+      "per_variant": {
+        "pass_original": {
+          "label": "pass",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "reason_ok": 0
+        },
+        "pass_other_values": {
+          "label": "pass",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "reason_ok": 0
+        },
+        "fail_stacked": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "reason_ok": 5
+        },
+        "fail_two_cards": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            5,
+            5,
+            5,
+            5,
+            6
+          ],
+          "reason_ok": 5
+        },
+        "fail_red_button": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "reason_ok": 1
+        },
+        "fail_wrong_title": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            6,
+            6,
+            5,
+            6,
+            6
+          ],
+          "reason_ok": 5
+        },
+        "fail_light_theme": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "reason_ok": 5
+        }
+      }
+    },
+    "checklist": {
+      "confusion": {
+        "tp": 25,
+        "tn": 5,
+        "fp_false_alarm": 5,
+        "fn_missed_defect": 0,
+        "unparseable": 0,
+        "accuracy": 0.857,
+        "recall_defects": 1.0,
+        "false_alarm_rate": 0.5
+      },
+      "latency_sec": {
+        "n": 35,
+        "min": 6.073,
+        "median": 7.54,
+        "mean": 7.531,
+        "p95": 8.855,
+        "max": 8.866,
+        "stdev": 0.712
+      },
+      "correct_reason_rate_on_detected_defects": 1.0,
+      "per_variant": {
+        "pass_original": {
+          "label": "pass",
+          "verdicts": [
+            "pass",
+            "pass",
+            "fail",
+            "fail",
+            "pass"
+          ],
+          "scores": [
+            10,
+            10,
+            9,
+            6,
+            10
+          ],
+          "reason_ok": 0
+        },
+        "pass_other_values": {
+          "label": "pass",
+          "verdicts": [
+            "fail",
+            "pass",
+            "pass",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            8,
+            10,
+            10,
+            8,
+            9
+          ],
+          "reason_ok": 0
+        },
+        "fail_stacked": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            9,
+            8,
+            8,
+            7,
+            9
+          ],
+          "reason_ok": 5
+        },
+        "fail_two_cards": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            4,
+            8,
+            4,
+            7,
+            7
+          ],
+          "reason_ok": 5
+        },
+        "fail_red_button": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            8,
+            9,
+            4,
+            9,
+            4
+          ],
+          "reason_ok": 5
+        },
+        "fail_wrong_title": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            8,
+            9,
+            4,
+            6,
+            4
+          ],
+          "reason_ok": 5
+        },
+        "fail_light_theme": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            6,
+            7,
+            4,
+            6,
+            8
+          ],
+          "reason_ok": 5
+        }
+      }
+    },
+    "checklist_clarified": {
+      "confusion": {
+        "tp": 25,
+        "tn": 10,
+        "fp_false_alarm": 0,
+        "fn_missed_defect": 0,
+        "unparseable": 0,
+        "accuracy": 1.0,
+        "recall_defects": 1.0,
+        "false_alarm_rate": 0.0
+      },
+      "latency_sec": {
+        "n": 35,
+        "min": 4.664,
+        "median": 6.971,
+        "mean": 7.695,
+        "p95": 12.209,
+        "max": 35.801,
+        "stdev": 5.232
+      },
+      "correct_reason_rate_on_detected_defects": 1.0,
+      "per_variant": {
+        "pass_original": {
+          "label": "pass",
+          "verdicts": [
+            "pass",
+            "pass",
+            "pass",
+            "pass",
+            "pass"
+          ],
+          "scores": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "reason_ok": 0
+        },
+        "pass_other_values": {
+          "label": "pass",
+          "verdicts": [
+            "pass",
+            "pass",
+            "pass",
+            "pass",
+            "pass"
+          ],
+          "scores": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "reason_ok": 0
+        },
+        "fail_stacked": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "reason_ok": 5
+        },
+        "fail_two_cards": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            6,
+            7,
+            7,
+            8,
+            7
+          ],
+          "reason_ok": 5
+        },
+        "fail_red_button": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            8,
+            8,
+            9,
+            9,
+            9
+          ],
+          "reason_ok": 5
+        },
+        "fail_wrong_title": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            8,
+            8,
+            8,
+            9,
+            8
+          ],
+          "reason_ok": 5
+        },
+        "fail_light_theme": {
+          "label": "fail",
+          "verdicts": [
+            "fail",
+            "fail",
+            "fail",
+            "fail",
+            "fail"
+          ],
+          "scores": [
+            8,
+            8,
+            8,
+            8,
+            9
+          ],
+          "reason_ok": 5
+        }
+      }
+    }
+  },
+  "local_critique": {
+    "confusion": {
+      "tp": 14,
+      "tn": 15,
+      "fp_false_alarm": 0,
+      "fn_missed_defect": 0,
+      "unparseable": 1,
+      "accuracy": 0.967,
+      "recall_defects": 1.0,
+      "false_alarm_rate": 0.0
+    },
+    "latency_sec": {
+      "n": 30,
+      "min": 0.59,
+      "median": 0.842,
+      "mean": 1.626,
+      "p95": 3.575,
+      "max": 4.053,
+      "stdev": 1.202
+    },
+    "per_case": {
+      "avg_bug": {
+        "truth": "fail",
+        "predicted": [
+          "fail",
+          "fail",
+          "fail",
+          "fail",
+          "fail"
+        ]
+      },
+      "avg_ok": {
+        "truth": "pass",
+        "predicted": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ]
+      },
+      "leap_bug": {
+        "truth": "fail",
+        "predicted": [
+          "fail",
+          "fail",
+          "fail",
+          "fail",
+          "fail"
+        ]
+      },
+      "leap_ok": {
+        "truth": "pass",
+        "predicted": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ]
+      },
+      "sql_bug": {
+        "truth": "fail",
+        "predicted": [
+          "unparseable",
+          "fail",
+          "fail",
+          "fail",
+          "fail"
+        ]
+      },
+      "sql_ok": {
+        "truth": "pass",
+        "predicted": [
+          "pass",
+          "pass",
+          "pass",
+          "pass",
+          "pass"
+        ]
+      }
+    }
+  },
+  "screenshots": {
+    "pass_original": "C:\\Work\\Temp\\spark-fusion-vibe\\docs\\media\\uc3-variants\\pass_original.png",
+    "pass_other_values": "C:\\Work\\Temp\\spark-fusion-vibe\\docs\\media\\uc3-variants\\pass_other_values.png",
+    "fail_stacked": "C:\\Work\\Temp\\spark-fusion-vibe\\docs\\media\\uc3-variants\\fail_stacked.png",
+    "fail_two_cards": "C:\\Work\\Temp\\spark-fusion-vibe\\docs\\media\\uc3-variants\\fail_two_cards.png",
+    "fail_red_button": "C:\\Work\\Temp\\spark-fusion-vibe\\docs\\media\\uc3-variants\\fail_red_button.png",
+    "fail_wrong_title": "C:\\Work\\Temp\\spark-fusion-vibe\\docs\\media\\uc3-variants\\fail_wrong_title.png",
+    "fail_light_theme": "C:\\Work\\Temp\\spark-fusion-vibe\\docs\\media\\uc3-variants\\fail_light_theme.png"
+  },
+  "reason_regexes": {
+    "fail_stacked": "stack|vertical",
+    "fail_two_cards": "\\b(two|2)\\b(\\s+\\w+){0,2}\\s+cards|third[^.]*(missing|not)|(no|missing)[^.]*tokens",
+    "fail_red_button": "\\bred\\b|not blue",
+    "fail_wrong_title": "GPU Monitor|title[^.]*(missing|incorrect|wrong|differ|not)",
+    "fail_light_theme": "light (mode|theme|background|colou?r)|not dark|white"
+  }
+}
