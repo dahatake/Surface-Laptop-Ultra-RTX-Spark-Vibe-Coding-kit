@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-11-11T02:27:07.2195250+09:00",
+  "test": "copilot-cli-agent-via-Start-CopilotLocal",
+  "endpoint": "http://127.0.0.1:5274/v1 (serializing proxy) -> http://127.0.0.1:5273/v1",
+  "model": "qwen2.5-7b-instruct-trtrtx-gpu:2",
+  "clientProcessObservedOnPort5274": "copilot",
+  "result": "2 of 3 agent tasks correct; all 3 completed without errors",
+  "runs": [
+    {
+      "task": "count-lines",
+      "toolCalls": [
+        "view",
+        "grep",
+        "grep",
+        null
+      ],
+      "apiCallIds": [
+        "chatcmpl-9927237cf44318f8",
+        "chatcmpl-cf5cc5639bd425bd",
+        "chatcmpl-ce6aa9f64f1420cd",
+        "chatcmpl-9819b0a14055594d"
+      ],
+      "model": "qwen2.5-7b-instruct-trtrtx-gpu:2",
+      "finalAnswer": "要求的文件 `requirements.txt` 有 4 行。",
+      "passed": true
+    },
+    {
+      "task": "find-symbol",
+      "toolCalls": [
+        "grep",
+        null
+      ],
+      "apiCallIds": [
+        "chatcmpl-9c693cbe3b9f91c0",
+        "chatcmpl-ce49b74df67c9b2c"
+      ],
+      "model": "qwen2.5-7b-instruct-trtrtx-gpu:2",
+      "finalAnswer": "The file defining the MCP server entry point was not found in the current directory.",
+      "passed": false
+    },
+    {
+      "task": "ja-summary",
+      "toolCalls": [
+        "powershell",
+        "powershell",
+        null
+      ],
+      "apiCallIds": [
+        "chatcmpl-80146ba3cb1b5e12",
+        "chatcmpl-8fbafc0ecdf00ee7",
+        "chatcmpl-ed57e758fc9666de"
+      ],
+      "model": "qwen2.5-7b-instruct-trtrtx-gpu:2",
+      "finalAnswer": "requirements.txtから抽出したパッケージ名は以下の通りです：\n\n- mcp>=2.3,<3\n- cryptography>=46.0.3\n- httpx>=0.28\n- numpy>=2.0",
+      "passed": true
+    }
+  ]
+}

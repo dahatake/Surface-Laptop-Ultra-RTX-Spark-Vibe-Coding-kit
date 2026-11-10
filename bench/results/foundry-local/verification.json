@@ -1,0 +1,105 @@
+{
+  "foundry": {
+    "system": {
+      "operatingSystem": "Microsoft Windows 10.0.28000",
+      "architecture": "Arm64",
+      "dotNet": ".NET 9.0.22",
+      "cpu": "NVIDIA RTX Spark N1X (6144-core GPU, 20-core CPU)",
+      "logicalCores": 20,
+      "physicalCores": 20,
+      "gpus": [
+        {
+          "name": "NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)",
+          "vendor": "NVIDIA",
+          "videoMemoryBytes": 67094183936
+        }
+      ],
+      "npus": [],
+      "totalMemoryBytes": 68699033600,
+      "availableMemoryBytes": 37979930624,
+      "diskPath": "C:\\",
+      "diskTotalBytes": 1022639468544,
+      "diskFreeBytes": 434078117888
+    },
+    "service": {
+      "state": "ready",
+      "ready": true,
+      "webUrls": [
+        "http://127.0.0.1:5273"
+      ],
+      "cliVersion": "0.13.0",
+      "daemonVersion": "0.13.0",
+      "protocolVersion": 3,
+      "sdkPackageVersion": "2.3.0",
+      "runtimePackageVersion": "2.3.0",
+      "ortPackageVersion": "1.31.0",
+      "ortGenAiPackageVersion": "0.18.0",
+      "foundryLocalSdkVersion": "2.3.0",
+      "foundryLocalRuntimeVersion": "2.3.0",
+      "foundryLocalCoreVersion": "2.3.0",
+      "ortVersion": "1.31.0",
+      "ortGenAiVersion": "0.18.0"
+    },
+    "models": {
+      "available": 149,
+      "loaded": 1,
+      "cached": 2
+    },
+    "connectivity": {
+      "localServiceReachable": true,
+      "modelRegistryReachable": true
+    },
+    "warnings": []
+  },
+  "checks": [
+    {
+      "response": "42",
+      "usage": {
+        "completion_tokens": 2,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 44
+      },
+      "test": "chat-completions",
+      "passed": true,
+      "seconds": 0.2239423
+    },
+    {
+      "response": "LOCAL_STREAM_OK",
+      "test": "sse-streaming",
+      "passed": true,
+      "done": true
+    },
+    {
+      "response": "42",
+      "function": {
+        "arguments": "{\"a\":19,\"b\":23}",
+        "name": "add"
+      },
+      "test": "tool-call-round-trip",
+      "passed": true
+    },
+    {
+      "response": [
+        "42",
+        "42",
+        "42",
+        "42"
+      ],
+      "test": "concurrent-requests-via-proxy",
+      "passed": true
+    },
+    {
+      "passed": true,
+      "test": "vscode-provider-configuration"
+    }
+  ],
+  "timestamp": "2026-11-11T05:56:13.1137591+09:00",
+  "model": "qwen2.5-7b-instruct-trtrtx-gpu:2",
+  "endpoint": "http://127.0.0.1:5274/v1/chat/completions"
+}

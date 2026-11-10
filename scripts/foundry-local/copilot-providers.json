@@ -1,0 +1,27 @@
+{
+  "providers": [
+    {
+      "name": "foundry-local",
+      "type": "openai",
+      "baseUrl": "http://127.0.0.1:5274/v1",
+      "wireApi": "completions"
+    }
+  ],
+  "models": [
+    {
+      "id": "qwen2.5-7b-instruct-trtrtx-gpu:2",
+      "provider": "foundry-local",
+      "name": "Qwen2.5 7B - Foundry Local",
+      "maxPromptTokens": 28672,
+      "maxOutputTokens": 4096,
+      "maxContextWindowTokens": 32768,
+      "capabilities": {
+        "supports": {
+          "toolCalls": true,
+          "streaming": true,
+          "vision": false
+        }
+      }
+    }
+  ]
+}

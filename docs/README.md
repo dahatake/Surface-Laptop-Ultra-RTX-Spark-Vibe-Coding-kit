@@ -17,6 +17,7 @@ Surface Laptop Ultra（NVIDIA RTX Spark N1X）のローカル GPU と、GitHub C
 | 7 | [セキュリティモデル](./security.md) | 何が端末の外に出るか、`gpu_profile_run` の許可リスト、残るリスク | 導入を判断する人 |
 | 8 | [トラブルシューティング](./troubleshooting.md) | よくある症状と対処 | 全員 |
 | 9 | [実測レポート・動画・スクリーンショット](./measurements.md) | N=5 の反復測定、A/B 比較、生ログ、再現手順 | 結果を検証する人 |
+| 10 | [Foundry Local で Copilot をローカル推論](./foundry-local-copilot.md) | Copilot Chat / CLI のモデルを Foundry Local（RTX GPU）にする手順、直列化プロキシ、検証、制約 | クラウドに推論を出したくない人 |
 
 各ユースケースの「実測結果」に MP4、GIF、途中・最終画面、GPU 時系列を追加しました。測定対象はローカル MCP ツール経路です。Fusion のクラウド側の品質・料金・応答時間そのものは測定していません。
 

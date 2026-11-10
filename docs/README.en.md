@@ -19,6 +19,7 @@ This kit combines the local GPU in Surface Laptop Ultra (NVIDIA RTX Spark N1X) w
 | 7 | [Security Model](./security.en.md) | What leaves the device, the `gpu_profile_run` allowlist, and remaining risks | People evaluating adoption |
 | 8 | [Troubleshooting](./troubleshooting.en.md) | Common symptoms and remedies | Everyone |
 | 9 | [Measurement Reports, Videos, and Screenshots](./measurements.en.md) | N=5 repeated measurements, A/B comparisons, raw logs, and reproduction steps | People verifying the results |
+| 10 | [Local Inference for Copilot with Foundry Local](./foundry-local-copilot.en.md) | Switching Copilot Chat / CLI to Foundry Local on the RTX GPU, the serializing proxy, verification, and limitations | People who do not want inference to go to the cloud |
 
 MP4s, GIFs, intermediate and final screens, and GPU time series have been added to each use case's measurement results. The measurements cover the local MCP tool path. They do not measure Fusion's cloud-side quality, pricing, or response time itself.
 
