@@ -1,0 +1,75 @@
+{
+  "method": "English pixel-row translation edits of original recordings; UI fixtures re-rendered in English",
+  "new_measurements": false,
+  "recordings": {
+    "uc1": {
+      "frames": 196,
+      "fps": 10.0,
+      "source_duration": 19.6,
+      "translation_row_matches": [
+        178,
+        152,
+        141,
+        130,
+        98,
+        90,
+        38,
+        29
+      ]
+    },
+    "uc2": {
+      "frames": 253,
+      "fps": 10.0,
+      "source_duration": 25.3,
+      "translation_row_matches": [
+        173,
+        147,
+        56,
+        33
+      ]
+    },
+    "uc3": {
+      "frames": 361,
+      "fps": 10.0,
+      "source_duration": 36.1,
+      "translation_row_matches": [
+        343,
+        159,
+        76,
+        67,
+        30
+      ]
+    }
+  },
+  "sources": {
+    "docs/media/uc1-demo.gif": "56639cd6ddc7a9bbe7196ce225b95f9c26afdc8c71432eba8dcda7e3caf51c0d",
+    "docs/media/uc1-demo.mp4": "4dce072e319c8cf0f44e798114ca928cf2c57af9f53bdf04db93708ab97c31b8",
+    "docs/media/uc1-gpu-timeline.svg": "b19693cde6bf3a9932ac7280485b4d16cd902963f4d96308e9a23e19cdd58bb4",
+    "docs/media/uc1-shot-final.png": "cd7a1c82497180ce223d69594df7f286f6f9ef1a3d231a28f791d88f81d93d9a",
+    "docs/media/uc1-shot-mid.png": "42101c34eabc85600d6f1e6c588e8e4e7c74e1b918c6849f1a3eb5e9df902437",
+    "docs/media/uc2-demo.gif": "93d6e23720a401fa4d60bb5c58b64d313a06d5900b95539853ebb7130066bd16",
+    "docs/media/uc2-demo.mp4": "7c9df5e5d42191f949e9112a3649b46ee5e948de13951180b4a144bb4dc6c225",
+    "docs/media/uc2-gpu-timeline.svg": "8e39f6647a5f2720dbaa758a12a2309f6cfcb7036dd6c657ea42a8895c6be22e",
+    "docs/media/uc2-shot-final.png": "8580d3054f2af8da6f0df26d7fbb547dc417da6085a15d1f2c5bc31a79a10647",
+    "docs/media/uc2-shot-mid.png": "3d134ea2bd2f88afa3605d0275c7a240c5a127f83b80887acb5d329d8e6faa58",
+    "docs/media/uc3-demo.gif": "d94300a58c9b546489f20199b76737ac6fea9a8f0ad2672fe0b1ea6f3bc67326",
+    "docs/media/uc3-demo.mp4": "bb5a113fa483b552763ef16e059cd0afd3b5cd081e3032729e774363072e1864",
+    "docs/media/uc3-gpu-timeline.svg": "a8249a8de6cf94df846270929cef886ccfbc1c22d7290c681901a4f492658791",
+    "docs/media/uc3-shot-final.png": "514c442b5e5bc95f898551452e05965c349d19273844b0d3d607a5343b9f1633",
+    "docs/media/uc3-shot-mid.png": "04730c9c808a1f168ff27e107bc182e0f22369b6648252d8652c8555fb75c1ed",
+    "docs/media/uc3-variants/fail_light_theme.png": "8af2d87008316dd08ed60efa28c62c73e16450263d3d409a989672793edb547d",
+    "docs/media/uc3-variants/fail_red_button.png": "4180209fadd896e521327e02184513e15f31dda2bceebdfa1760a5449a150df9",
+    "docs/media/uc3-variants/fail_stacked.png": "8bdccc7a441d9823a6f9813a0ab5f83df79a8db04ec977fedabdf1a41e299e04",
+    "docs/media/uc3-variants/fail_two_cards.png": "49943580db9ebe3406e6595ed1843241e42ddbdf1c5ab45db9eccad4e89ab8af",
+    "docs/media/uc3-variants/fail_wrong_title.png": "fc51342344dcd20d7b1689853fb55f375675c8d9d962fb89ea6f858e11d51287",
+    "docs/media/uc3-variants/pass_original.png": "1f436e47a2b3bf14cbeaf0214c4b37e8017a19cb3def596e6f7d419d06a3f9e5",
+    "docs/media/uc3-variants/pass_other_values.png": "036f2a533d83ee87ce48d829f3f04bc4448e257efdeb4c244e481be9b71965f9",
+    "bench/fixtures/ui/fail_light_theme.html": "a4e7c8d12f47de13ef2685c08789c2640bcd6a27ade0fb362a781c257402399c",
+    "bench/fixtures/ui/fail_red_button.html": "b260de552353e1a319d920243f3fed59f4efa574e75a14cac56332027490cee5",
+    "bench/fixtures/ui/fail_stacked.html": "cd312a3cd10e320090523f5d0a73064e8da19d3750a127b54882a841289d1602",
+    "bench/fixtures/ui/fail_two_cards.html": "ceeeb7fc34e9b15949901b7c535f603a2952095b72305c58e79c3baa419d71ca",
+    "bench/fixtures/ui/fail_wrong_title.html": "45194add2aa13379982a565b9af639c984aa92e8fcd760bd6ce9baa57f864cb3",
+    "bench/fixtures/ui/pass_original.html": "4dc23cf1979de919ec72af032a388b2db334fbff0312afac32d37a84538af06e",
+    "bench/fixtures/ui/pass_other_values.html": "14fa71d29d930dc63491a1ef4b6a25a631133ae8d9f85d124be0bb02bfa9d2a7"
+  }
+}

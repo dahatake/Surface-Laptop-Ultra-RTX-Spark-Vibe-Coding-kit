@@ -1,5 +1,7 @@
 # Spark × Fusion Vibe Coding Kit ドキュメント
 
+**日本語** | [English](./README.en.md)
+
 Surface Laptop Ultra（NVIDIA RTX Spark N1X）のローカル GPU と、GitHub Copilot Fusion のクラウド側オーケストレーションを組み合わせて Vibe Coding を行うためのキットです。このフォルダーには、ユースケースの詳しい説明と使い方をまとめています。
 
 ## 読む順番

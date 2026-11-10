@@ -1,5 +1,7 @@
 # Spark × Fusion Vibe Coding Kit
 
+**日本語** | [English](./README.en.md)
+
 > 📘 **詳細ドキュメント**: [docs/README.md](./docs/README.md)（[アーキテクチャ](./docs/architecture.md) / [セットアップ](./docs/getting-started.md) / [UC1](./docs/use-cases/uc1-private-fusion.md) / [UC2](./docs/use-cases/uc2-gpu-grounded-critique.md) / [UC3](./docs/use-cases/uc3-visual-critic-loop.md) / [ツールリファレンス](./docs/tool-reference.md) / [セキュリティ](./docs/security.md) / [トラブルシューティング](./docs/troubleshooting.md)）
 
 Surface Laptop Ultra（NVIDIA RTX Spark N1X）と GitHub Copilot Fusion を組み合わせた Vibe Coding 環境です。

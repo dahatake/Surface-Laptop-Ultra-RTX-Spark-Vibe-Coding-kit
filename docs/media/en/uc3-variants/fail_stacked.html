@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Spark Dashboard</title>
+<style>
+  body { font-family: "Segoe UI", sans-serif; background: #0f172a; color: #e2e8f0; margin: 0; padding: 32px; }
+  h1 { margin: 0 0 24px; }
+  .cards { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  .card { background: #1e293b; border-radius: 12px; padding: 20px; }
+  .card .v { font-size: 36px; font-weight: 700; color: #22c55e; }
+  button { margin-top: 24px; background: #2563eb; color: #fff; border: 0; border-radius: 8px; padding: 12px 20px; font-size: 16px; }
+</style>
+</head>
+<body>
+  <h1>RTX Spark Dashboard</h1>
+  <div class="cards">
+    <div class="card"><div>GPU usage</div><div class="v">72%</div></div>
+    <div class="card"><div>Unified memory</div><div class="v">38 GB</div></div>
+    <div class="card"><div>Tokens/sec</div><div class="v">85</div></div>
+  </div>
+  <button>Run benchmark</button>
+</body>
+</html>
