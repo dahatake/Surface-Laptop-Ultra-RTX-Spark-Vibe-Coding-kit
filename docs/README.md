@@ -48,4 +48,3 @@ Surface Laptop Ultra（NVIDIA RTX Spark N1X）のローカル GPU と、GitHub C
 | ローカル推論 | LM Studio（OpenAI 互換 API、`http://localhost:1234/v1`） |
 | モデル | `qwen/qwen3.5-9b`（チャット）、`google/gemma-4-e4b`（画像）、`text-embedding-nomic-embed-text-v1.5`（埋め込み） |
 | クライアント | VS Code（GitHub Copilot Chat）、GitHub Copilot CLI |
-| 検証 | `tests/e2e_test.py` の全 11 項目に合格 |

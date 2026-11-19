@@ -50,4 +50,3 @@ MP4s, GIFs, intermediate and final screens, and GPU time series have been added 
 | Local inference | LM Studio (OpenAI-compatible API, `http://localhost:1234/v1`) |
 | Models | `qwen/qwen3.5-9b` (chat), `google/gemma-4-e4b` (vision), `text-embedding-nomic-embed-text-v1.5` (embeddings) |
 | Clients | VS Code (GitHub Copilot Chat), GitHub Copilot CLI |
-| Verification | All 11 checks in `tests/e2e_test.py` passed |

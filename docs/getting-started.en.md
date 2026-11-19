@@ -77,28 +77,6 @@ pwsh -File .\scripts\setup.ps1 -ProfileRoots C:\src\my-inference-app -SkipModelL
 
 `setup.ps1` registers the three model names and `SPARK_PROFILE_ROOTS`. To change anything else, add it to `spark-vibe.env` in `mcp.json` / `mcp-config.json`, then restart the MCP server.
 
-## 3. Verification
-
-```powershell
-.\.venv\Scripts\python.exe tests\e2e_test.py
-```
-
-This test starts the MCP server using the settings registered with Copilot CLI and calls all eight tools. A final message of `RESULT: ALL PASSED` indicates success. It takes a few minutes, depending on local LLM response times.
-
-| Check | What It Verifies |
-|---|---|
-| list_tools | All eight tools are exposed |
-| UC1 scan_secrets | Can detect the dummy AWS key |
-| UC1 repo_index | Can create an index |
-| UC1 index stores redacted text only | No secrets remain in the index |
-| UC1 repo_search | Returns locations only, not code bodies |
-| UC1 private_ask | Answers correctly without including secrets |
-| UC2 gpu_status | Can retrieve RTX Spark status |
-| UC2 gpu_profile_run | Can measure GPU load during a benchmark (example measurement: maximum utilization 90%, maximum memory 16,120 MiB) |
-| UC2 rejects non-allowlisted | Rejects 11 non-allowlisted patterns without executing them |
-| UC3 visual_review | Returns evaluation results as JSON |
-| UC3 local_critique | Rejects code containing a division-by-zero bug |
-
 ## 4. Using the Clients
 
 ### VS Code

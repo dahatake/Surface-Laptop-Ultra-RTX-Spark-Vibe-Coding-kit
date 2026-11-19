@@ -85,6 +85,5 @@ spark-fusion-vibe/
 │   ├── private_repo/billing.py   # UC1 のデモ（ダミーの AWS キーを含む）
 │   ├── bench_llm.py              # UC2 のデモ用ベンチマーク（tokens/sec）
 │   └── ui/index.html             # UC3 のデモ UI
-├── tests/e2e_test.py             # E2E テスト（全ツールを実際に呼ぶ）
 └── docs/                         # このドキュメント
 ```

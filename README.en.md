@@ -77,15 +77,6 @@ After setup, select **Copilot Fusion** in the model picker, set the effort level
 | `SPARK_PROFILE_ROOTS` | This project's directory (allowed roots for scripts, tests, and `cwd` used by `gpu_profile_run`; separated by `os.pathsep`; add roots with `setup.ps1 -ProfileRoots C:\src\myproj`) |
 | `SPARK_PROFILE_PYTHON` | The MCP server's venv Python (set this to use the interpreter belonging to the project being measured) |
 
-## Validation
-
-```powershell
-.\.venv\Scripts\python.exe tests\e2e_test.py
-```
-
-This test starts the MCP server exactly as registered in Copilot CLI and actually calls all eight tools.
-It checks that secrets appear in neither the index nor answers; GPU load can be measured; `gpu_profile_run` rejects 11 non-allowlisted patterns without executing them (including `cmd`, `powershell`, `python -c`, scripts or `cwd` outside allowed roots, and pytest `-p`); VLM reviews return JSON; and buggy code can be rejected.
-
 ## Important notes
 
 - `gpu_profile_run` uses an **allowlist**. It does not use a shell (`shell=False`) and executes only these `argv` forms. Everything else returns `rejected` without execution.

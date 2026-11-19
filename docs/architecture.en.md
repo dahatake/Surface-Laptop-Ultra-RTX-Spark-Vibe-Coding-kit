@@ -89,6 +89,5 @@ spark-fusion-vibe/
 │   ├── private_repo/billing.py   # UC1 demo (contains a dummy AWS key)
 │   ├── bench_llm.py              # UC2 demo benchmark (tokens/sec)
 │   └── ui/index.html             # UC3 demo UI
-├── tests/e2e_test.py             # E2E tests (actually call every tool)
 └── docs/                         # This documentation
 ```

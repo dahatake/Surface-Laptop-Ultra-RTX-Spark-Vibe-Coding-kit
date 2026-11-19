@@ -74,14 +74,6 @@ pwsh -File .\scripts\setup.ps1
 | `SPARK_PROFILE_ROOTS` | このプロジェクトのフォルダー（`gpu_profile_run` が実行できるスクリプト・テスト・cwd のルート。`os.pathsep` 区切り。`setup.ps1 -ProfileRoots C:\src\myproj` で追加） |
 | `SPARK_PROFILE_PYTHON` | MCP サーバーの venv の Python（計測対象のプロジェクト用インタープリターに切り替える場合に指定） |
 
-## 検証
-
-```powershell
-.\.venv\Scripts\python.exe tests\e2e_test.py
-```
-
-このテストは、Copilot CLI に登録した設定のとおりに MCP サーバーを起動し、8 つのツールをすべて実際に呼び出します。
-確認項目は、シークレットが索引にも回答にも含まれないこと、GPU の負荷を実測できること、`gpu_profile_run` が許可リスト外の 11 パターン（`cmd`、`powershell`、`python -c`、ルート外のスクリプトや cwd、pytest `-p` など）を実行せずに拒否すること、VLM の審査結果を JSON で受け取れること、バグのあるコードを不合格にできることです。
 
 ## 注意
 

@@ -77,12 +77,6 @@ pwsh -File .\scripts\setup.ps1 -ProfileRoots C:\src\my-inference-app -SkipModelL
 
 ## 3. 動作確認
 
-```powershell
-.\.venv\Scripts\python.exe tests\e2e_test.py
-```
-
-このテストは、Copilot CLI に登録した設定のとおりに MCP サーバーを起動し、8 つのツールをすべて呼び出します。最後に `RESULT: ALL PASSED` と表示されれば成功です。所要時間は数分です（ローカル LLM の応答時間による）。
-
 | チェック | 確認内容 |
 |---|---|
 | list_tools | 8 ツールが公開されている |

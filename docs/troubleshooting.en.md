@@ -8,10 +8,8 @@
 nvidia-smi                                   # Is the GPU visible?
 lms server status                            # Is LM Studio's API server running?
 lms ps                                       # Are all three models loaded?
-.\.venv\Scripts\python.exe tests\e2e_test.py # Which tool fails?
 ```
 
-The E2E test's `[FAIL]` lines identify which tools are having problems.
 
 ## Symptoms and Remedies
 
@@ -76,7 +74,6 @@ The E2E test's `[FAIL]` lines identify which tools are having problems.
 
 ## If the Problem Persists
 
-1. Save the full output of `tests\e2e_test.py`.
 2. Check the log in VS Code under **MCP: List Servers** → `spark-vibe` → **Show Output**.
 3. Start `server.py` directly to check for import errors.
 
